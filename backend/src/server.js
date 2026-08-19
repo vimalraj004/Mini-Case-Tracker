@@ -12,7 +12,7 @@ import caseRoutes from "./routes/caseRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 import auditLogRoutes from "./routes/auditLogRoutes.js";
-import dashBoardRoutes from "./routes/dashboardRoutes.js";
+import dashBoardRoutes from "./routes/dashBoardRoutes.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
