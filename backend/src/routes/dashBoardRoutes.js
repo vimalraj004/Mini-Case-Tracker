@@ -2,7 +2,7 @@ import { Router } from "express";
 
 import {
   getDashboardOverview,
-} from "../controllers/dashboardController.js";
+} from "../controllers/dashBoardController.js";
 
 import {
   requireAuth,
