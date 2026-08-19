@@ -1,0 +1,176 @@
+.audit-page {
+  width: 100%;
+}
+
+.audit-card {
+  margin-top: 24px;
+  border-radius: 14px !important;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06) !important;
+}
+
+.audit-toolbar {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.audit-search {
+  flex: 1;
+}
+
+.audit-filter {
+  min-width: 190px;
+}
+
+.audit-alert {
+  margin-bottom: 20px;
+}
+
+.audit-loading,
+.audit-empty {
+  min-height: 240px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  text-align: center;
+}
+
+.audit-empty svg {
+  font-size: 48px;
+  opacity: 0.45;
+}
+
+.audit-list {
+  width: 100%;
+}
+
+.audit-item {
+  display: flex;
+
+  gap: 16px;
+
+  padding: 18px 6px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.audit-item:last-child {
+  border-bottom: none;
+}
+
+.audit-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eef2ff;
+  color: #4f46e5;
+}
+
+.audit-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.audit-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  margin-bottom: 8px;
+}
+
+.audit-date {
+  color: #64748b;
+  font-size: 13px !important;
+  white-space: nowrap;
+}
+
+.audit-details {
+  color: #334155;
+  font-size: 15px !important;
+  margin-bottom: 10px !important;
+}
+
+.audit-meta {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 18px;
+}
+
+.audit-meta-item {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+
+  color: #64748b;
+}
+
+.audit-meta-item svg {
+  font-size: 17px;
+}
+
+.audit-meta-item p {
+  font-size: 13px;
+}
+
+.audit-pagination {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 24px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .audit-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .audit-filter {
+    width: 100%;
+  }
+
+  .audit-top {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .audit-date {
+    white-space: normal;
+  }
+
+  .audit-item {
+    gap: 12px;
+  }
+
+  .audit-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .audit-meta {
+    gap: 10px;
+  }
+}

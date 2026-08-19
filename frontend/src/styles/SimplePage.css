@@ -1,0 +1,30 @@
+.simple-page {
+  width: 100%;
+  min-width: 0;
+}
+
+.simple-page-card {
+  width: 100%;
+
+  border: 1px solid #e5e7eb;
+}
+
+.simple-page-message {
+  color: #64748b !important;
+
+  line-height: 1.7 !important;
+
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .simple-page-card .MuiCardContent-root {
+    padding: 16px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .simple-page-card .MuiCardContent-root {
+    padding: 12px !important;
+  }
+}

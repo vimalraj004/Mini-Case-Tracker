@@ -1,0 +1,462 @@
+/* =========================================
+   APP SHELL
+========================================= */
+
+.app-shell {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  background: #f5f7fb;
+}
+
+/* =========================================
+   DRAWER
+========================================= */
+
+.app-shell__drawer {
+  flex-shrink: 0;
+}
+
+.app-shell__drawer--desktop {
+  width: 240px;
+}
+
+.app-shell__drawer--desktop .MuiDrawer-paper {
+  width: 240px;
+  box-sizing: border-box;
+}
+
+.app-shell__drawer--mobile .MuiDrawer-paper {
+  width: 240px;
+  box-sizing: border-box;
+}
+
+/* Drawer appearance */
+
+.app-shell__drawer .MuiDrawer-paper {
+  background: linear-gradient(
+    180deg,
+    #111f38 0%,
+    #162b4a 100%
+  );
+
+  color: #ffffff;
+  border: none;
+}
+
+/* =========================================
+   DRAWER CONTENT
+========================================= */
+
+.app-shell__drawer-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================================
+   LOGO
+========================================= */
+
+.app-shell__logo-container {
+  min-height: 72px !important;
+  padding: 0 22px !important;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+}
+
+.app-shell__logo-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.1);
+  color: #8da8ff;
+}
+
+.app-shell__logo-icon svg {
+  font-size: 21px;
+}
+
+.app-shell__logo-text {
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.2px;
+
+  white-space: nowrap;
+}
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.app-shell__nav-list {
+  padding: 18px 12px !important;
+}
+
+.app-shell__nav-label {
+  padding: 0 12px 10px;
+
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.1px;
+
+  color: #7587a3;
+}
+
+.app-shell__nav-item {
+  min-height: 46px !important;
+
+  margin-bottom: 5px !important;
+  padding: 0 12px !important;
+
+  border-radius: 10px !important;
+
+  color: #b8c5d9 !important;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease !important;
+}
+
+.app-shell__nav-item:hover {
+  background: rgba(255, 255, 255, 0.07) !important;
+  color: #ffffff !important;
+
+  transform: translateX(2px);
+}
+
+.app-shell__nav-item.Mui-selected {
+  background: linear-gradient(
+    90deg,
+    rgba(91, 91, 255, 0.95),
+    rgba(79, 70, 229, 0.85)
+  ) !important;
+
+  color: #ffffff !important;
+
+  box-shadow: 0 7px 18px rgba(79, 70, 229, 0.2);
+}
+
+.app-shell__nav-icon {
+  min-width: 38px !important;
+  color: inherit !important;
+}
+
+.app-shell__nav-icon svg {
+  font-size: 21px;
+}
+
+.app-shell__nav-text .MuiTypography-root {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* =========================================
+   DRAWER BOTTOM
+========================================= */
+
+.app-shell__drawer-bottom {
+  margin-top: auto;
+  padding: 0 12px 15px;
+}
+
+.app-shell__divider {
+  margin-bottom: 13px !important;
+
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.app-shell__user-card {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 9px;
+  margin-bottom: 7px;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.app-shell__user-avatar {
+  width: 34px !important;
+  height: 34px !important;
+
+  flex-shrink: 0;
+
+  background: #5b5bf7 !important;
+
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+.app-shell__user-info {
+  min-width: 0;
+}
+
+.app-shell__user-name {
+  overflow: hidden;
+
+  font-size: 12px !important;
+  font-weight: 700 !important;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.app-shell__user-role {
+  margin-top: 2px !important;
+
+  font-size: 10px !important;
+
+  color: #8fa0b9;
+}
+
+.app-shell__logout {
+  min-height: 42px !important;
+
+  border-radius: 9px !important;
+
+  color: #aebbd0 !important;
+}
+
+.app-shell__logout:hover {
+  background: rgba(239, 68, 68, 0.1) !important;
+  color: #ff8c8c !important;
+}
+
+.app-shell__logout-icon {
+  min-width: 38px !important;
+  color: inherit !important;
+}
+
+/* =========================================
+   MAIN AREA
+========================================= */
+
+.app-shell__main {
+  flex: 1;
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================================
+   APP BAR
+========================================= */
+
+.app-shell__appbar {
+  background: rgba(255, 255, 255, 0.96) !important;
+  color: #172033 !important;
+
+  border-bottom: 1px solid #e8ebf1;
+
+  backdrop-filter: blur(12px);
+}
+
+.app-shell__toolbar {
+  min-height: 68px !important;
+
+  padding: 0 28px !important;
+}
+
+.app-shell__page-context {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 0;
+}
+
+.app-shell__page-title {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+
+  color: #26334a;
+}
+
+.app-shell__page-subtitle {
+  margin-top: 2px !important;
+
+  font-size: 11px !important;
+
+  color: #8993a5;
+}
+
+/* =========================================
+   MOBILE MENU
+========================================= */
+
+.app-shell__menu-button {
+  display: none !important;
+
+  margin-right: 8px !important;
+
+  color: #334155 !important;
+}
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.app-shell__profile {
+  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 5px 9px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.app-shell__profile:hover {
+  background: #f2f4f8;
+}
+
+.app-shell__profile-avatar {
+  width: 36px !important;
+  height: 36px !important;
+
+  flex-shrink: 0;
+
+  background: #4f46e5 !important;
+
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+
+.app-shell__profile-name {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+
+  color: #26334a;
+}
+
+.app-shell__profile-role {
+  margin-top: 1px !important;
+
+  font-size: 10px !important;
+
+  color: #8993a5;
+}
+
+/* =========================================
+   PROFILE MENU
+========================================= */
+
+.app-shell__profile-menu .MuiMenuItem-root {
+  min-width: 150px;
+
+  gap: 9px;
+
+  font-size: 13px;
+}
+
+.app-shell__profile-menu .MuiMenuItem-root svg {
+  color: #64748b;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.app-shell__content {
+  flex: 1;
+  min-width: 0;
+
+  padding: 30px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 899px) {
+  .app-shell__menu-button {
+    display: inline-flex !important;
+  }
+
+  .app-shell__toolbar {
+    padding: 0 20px !important;
+  }
+
+  .app-shell__content {
+    padding: 24px 20px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .app-shell__toolbar {
+    min-height: 60px !important;
+
+    padding: 0 14px !important;
+  }
+
+  .app-shell__page-subtitle {
+    display: none;
+  }
+
+  .app-shell__page-title {
+    font-size: 13px !important;
+  }
+
+  .app-shell__profile {
+    padding: 4px;
+  }
+
+  .app-shell__profile-info {
+    display: none;
+  }
+
+  .app-shell__profile-avatar {
+    width: 34px !important;
+    height: 34px !important;
+  }
+
+  .app-shell__content {
+    padding: 18px 14px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+  .app-shell__content {
+    padding: 14px 10px;
+  }
+
+  .app-shell__logo-container {
+    padding: 0 18px !important;
+  }
+
+  .app-shell__drawer--mobile .MuiDrawer-paper {
+    width: 240px;
+  }
+}

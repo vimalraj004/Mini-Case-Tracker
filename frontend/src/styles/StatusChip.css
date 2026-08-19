@@ -1,0 +1,105 @@
+/* =========================================
+   BASE STATUS CHIP
+========================================= */
+
+.status-chip {
+  height: 26px !important;
+
+  border-radius: 7px !important;
+
+  font-size: 11px !important;
+  font-weight: 700 !important;
+
+  letter-spacing: 0.1px;
+
+  border: 1px solid transparent;
+}
+
+.status-chip .MuiChip-label {
+  padding: 0 10px !important;
+}
+
+/* =========================================
+   NEW
+========================================= */
+
+.status-chip--new {
+  background: #edf1f6 !important;
+  color: #536174 !important;
+
+  border-color: #dce2ea !important;
+}
+
+/* =========================================
+   ASSIGNED
+========================================= */
+
+.status-chip--assigned {
+  background: #e8f1ff !important;
+  color: #2563eb !important;
+
+  border-color: #cfe0ff !important;
+}
+
+/* =========================================
+   IN PROGRESS
+========================================= */
+
+.status-chip--progress {
+  background: #fff4d8 !important;
+  color: #b7791f !important;
+
+  border-color: #f8df9f !important;
+}
+
+/* =========================================
+   SUBMITTED
+========================================= */
+
+.status-chip--submitted {
+  background: #e8f7ef !important;
+  color: #16834b !important;
+
+  border-color: #c9ecd9 !important;
+}
+
+/* =========================================
+   CLEARED
+========================================= */
+
+.status-chip--cleared {
+  background: #dff5e9 !important;
+  color: #117a43 !important;
+
+  border-color: #bfe8d0 !important;
+}
+
+/* =========================================
+   DISCREPANT
+========================================= */
+
+.status-chip--discrepant {
+  background: #fde8e8 !important;
+  color: #c53030 !important;
+
+  border-color: #f7cccc !important;
+}
+
+/* =========================================
+   FALLBACK
+========================================= */
+
+.status-chip--default {
+  background: #edf1f6 !important;
+  color: #536174 !important;
+
+  border-color: #dce2ea !important;
+}
+
+/* =========================================
+   HOVER
+========================================= */
+
+.status-chip:hover {
+  filter: brightness(0.97);
+}

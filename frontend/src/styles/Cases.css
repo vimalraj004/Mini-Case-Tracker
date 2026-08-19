@@ -1,0 +1,117 @@
+.cases-page {
+  width: 100%;
+  min-width: 0;
+}
+
+.cases-card {
+  width: 100%;
+  min-width: 0;
+}
+
+/* =========================================
+   FILTERS
+========================================= */
+
+.cases-filters {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.cases-search {
+  flex: 1;
+  min-width: 0;
+}
+
+.cases-status-filter {
+  min-width: 180px;
+}
+
+/* =========================================
+   TABLE
+========================================= */
+
+.cases-table-wrapper {
+  width: 100%;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  -webkit-overflow-scrolling: touch;
+}
+
+.cases-table-wrapper table {
+  min-width: 850px;
+}
+
+.cases-table-wrapper .MuiTableCell-root {
+  white-space: nowrap;
+}
+
+.case-id {
+  font-weight: 700;
+}
+
+/* =========================================
+   PAGINATION
+========================================= */
+
+.cases-card .MuiTablePagination-root {
+  overflow-x: auto;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .cases-status-filter {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .cases-card {
+    border-radius: 12px;
+  }
+
+  .cases-card .MuiCardContent-root {
+    padding: 14px !important;
+  }
+
+  .cases-table-wrapper {
+    margin: 0 -2px;
+  }
+
+  .cases-table-wrapper table {
+    min-width: 850px;
+  }
+
+  .cases-table-wrapper .MuiTableCell-root {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+
+  .cases-card .MuiTablePagination-toolbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+  .cases-card .MuiCardContent-root {
+    padding: 10px !important;
+  }
+
+  .cases-table-wrapper .MuiTableCell-root {
+    padding: 8px 10px;
+  }
+}

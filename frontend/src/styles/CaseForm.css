@@ -1,0 +1,60 @@
+.case-form-page {
+  width: 100%;
+  min-width: 0;
+}
+
+.case-form-card {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+}
+
+.case-form {
+  width: 100%;
+  gap: 20px;
+}
+
+.case-form-alert {
+  margin-bottom: 20px;
+}
+
+.case-form-actions {
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 8px;
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .case-form-card .MuiCardContent-root {
+    padding: 16px !important;
+  }
+
+  .case-form {
+    gap: 16px;
+  }
+
+  .case-form-actions {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+
+  .case-form-actions button {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+  .case-form-card .MuiCardContent-root {
+    padding: 12px !important;
+  }
+}

@@ -1,0 +1,420 @@
+/* =========================================
+   AGENTS PAGE
+========================================= */
+
+.agents-page {
+  width: 100%;
+  min-width: 0;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.agents-card {
+  width: 100%;
+
+  border: 1px solid #e5e7eb;
+}
+
+/* =========================================
+   TOOLBAR
+========================================= */
+
+.agents-toolbar {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  margin-bottom: 20px;
+}
+
+.agents-search {
+  flex: 1;
+  min-width: 0;
+}
+
+.agents-search .MuiSvgIcon-root {
+  color: #94a3b8;
+}
+
+.agents-count {
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  color: #64748b;
+
+  font-size: 14px;
+}
+
+.agents-count svg {
+  font-size: 20px;
+}
+
+/* =========================================
+   ALERT
+========================================= */
+
+.agents-alert {
+  margin-bottom: 20px;
+}
+
+/* =========================================
+   LOADING
+========================================= */
+
+.agents-loading {
+  min-height: 240px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+}
+
+/* =========================================
+   EMPTY
+========================================= */
+
+.agents-empty {
+  min-height: 240px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  gap: 8px;
+}
+
+.agents-empty > svg {
+  font-size: 48px;
+
+  margin-bottom: 8px;
+
+  color: #94a3b8;
+}
+
+/* =========================================
+   AGENT LIST
+========================================= */
+
+.agents-list {
+  gap: 12px;
+}
+
+.agent-item {
+  width: 100%;
+
+  transition:
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.agent-item:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 5px 18px rgba(15, 23, 42, 0.07);
+}
+
+.agent-item .MuiCardContent-root {
+  padding: 16px !important;
+}
+
+/* =========================================
+   AGENT MAIN
+========================================= */
+
+.agent-main {
+  display: grid;
+
+  grid-template-columns:
+    auto
+    minmax(180px, 1fr)
+    auto
+    auto
+    auto;
+
+  align-items: center;
+
+  gap: 18px;
+
+  min-width: 0;
+}
+
+/* =========================================
+   AVATAR
+========================================= */
+
+.agent-avatar {
+  width: 44px !important;
+  height: 44px !important;
+
+  background: #4f46e5 !important;
+
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+
+/* =========================================
+   INFO
+========================================= */
+
+.agent-info {
+  min-width: 0;
+}
+
+.agent-name {
+  font-size: 15px !important;
+
+  font-weight: 700 !important;
+
+  color: #172033;
+}
+
+.agent-email {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  margin-top: 4px;
+}
+
+.agent-email svg {
+  flex-shrink: 0;
+
+  font-size: 15px;
+
+  color: #94a3b8;
+}
+
+.agent-email p {
+  min-width: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   STATUS
+========================================= */
+
+.agent-status {
+  flex-shrink: 0;
+}
+
+/* =========================================
+   CASE COUNT
+========================================= */
+
+.agent-cases {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  min-width: 120px;
+}
+
+.agent-cases svg {
+  color: #64748b;
+
+  font-size: 21px;
+}
+
+.agent-cases-value {
+  font-size: 15px !important;
+
+  font-weight: 700 !important;
+
+  color: #172033;
+}
+
+.agent-cases-label {
+  font-size: 11px !important;
+
+  color: #94a3b8;
+}
+
+/* =========================================
+   JOINED
+========================================= */
+
+.agent-joined {
+  min-width: 90px;
+}
+
+.agent-joined-label {
+  margin-bottom: 2px !important;
+
+  font-size: 11px !important;
+
+  color: #94a3b8;
+}
+
+.agent-joined > p:last-child {
+  font-size: 12px;
+
+  color: #475569;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .agent-main {
+    grid-template-columns:
+      auto
+      minmax(160px, 1fr)
+      auto;
+
+    row-gap: 14px;
+  }
+
+  .agent-status {
+    justify-self: end;
+  }
+
+  .agent-cases {
+    grid-column: 2;
+  }
+
+  .agent-joined {
+    grid-column: 3;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .agents-card .MuiCardContent-root {
+    padding: 14px !important;
+  }
+
+  .agents-toolbar {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 12px;
+  }
+
+  .agents-count {
+    justify-content: flex-end;
+  }
+
+  .agent-main {
+    display: grid;
+
+    grid-template-columns: auto 1fr auto;
+
+    gap: 12px;
+  }
+
+  .agent-avatar {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  .agent-info {
+    min-width: 0;
+  }
+
+  .agent-status {
+    justify-self: end;
+  }
+
+  .agent-cases {
+    grid-column: 1 / 3;
+
+    min-width: 0;
+  }
+
+  .agent-joined {
+    grid-column: 3;
+
+    text-align: right;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+  .agents-card .MuiCardContent-root {
+    padding: 10px !important;
+  }
+
+  .agent-item .MuiCardContent-root {
+    padding: 12px !important;
+  }
+
+  .agent-main {
+    gap: 10px;
+  }
+
+  .agent-avatar {
+    width: 38px !important;
+    height: 38px !important;
+
+    font-size: 14px !important;
+  }
+
+  .agent-name {
+    font-size: 14px !important;
+  }
+
+  .agent-email p {
+    font-size: 11px;
+  }
+
+  .agent-cases-label {
+    font-size: 10px !important;
+  }
+
+  .agent-joined {
+    min-width: 70px;
+  }
+}
+.add-agent-button {
+  white-space: nowrap;
+  min-height: 40px;
+  text-transform: none;
+  font-weight: 600;
+}
+@media (max-width: 900px) {
+  .agents-toolbar {
+    flex-wrap: wrap;
+  }
+
+  .agents-search {
+    width: 100%;
+  }
+
+  .add-agent-button {
+    margin-left: auto;
+  }
+}

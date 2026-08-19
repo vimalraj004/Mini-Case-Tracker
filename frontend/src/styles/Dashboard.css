@@ -1,0 +1,124 @@
+.dashboard-page {
+  width: 100%;
+  min-width: 0;
+}
+
+/* =========================================
+   STAT CARDS
+========================================= */
+
+.dashboard-stat-card {
+  height: 100%;
+  border: 1px solid #e5e7eb;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dashboard-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.dashboard-stat-card .MuiCardContent-root {
+  min-width: 0;
+}
+
+.dashboard-stat-label {
+  font-size: 13px !important;
+  color: #64748b;
+
+  overflow-wrap: anywhere;
+}
+
+.dashboard-stat-value {
+  margin-top: 8px !important;
+
+  font-size: 30px !important;
+  font-weight: 700 !important;
+
+  color: #0f172a;
+}
+
+/* =========================================
+   OVERVIEW
+========================================= */
+
+.dashboard-overview-card {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #e5e7eb;
+}
+
+.dashboard-status-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 16px;
+}
+
+.dashboard-description {
+  margin-top: 24px !important;
+
+  color: #64748b;
+
+  line-height: 1.7 !important;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 899px) {
+  .dashboard-stat-value {
+    font-size: 28px !important;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .dashboard-overview-card {
+    margin-top: 16px;
+  }
+
+  .dashboard-status-list {
+    gap: 6px;
+  }
+
+  .dashboard-description {
+    margin-top: 18px !important;
+  }
+
+  .dashboard-stat-card .MuiCardContent-root {
+    padding: 16px !important;
+  }
+
+  .dashboard-stat-label {
+    font-size: 12px !important;
+  }
+
+  .dashboard-stat-value {
+    margin-top: 6px !important;
+    font-size: 26px !important;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+  .dashboard-stat-card .MuiCardContent-root {
+    padding: 14px !important;
+  }
+
+  .dashboard-stat-value {
+    font-size: 24px !important;
+  }
+}

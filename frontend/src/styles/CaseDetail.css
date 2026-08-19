@@ -1,0 +1,227 @@
+.case-detail-page {
+  width: 100%;
+  min-width: 0;
+}
+
+.case-detail-loading {
+  min-height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-detail-alert {
+  margin-bottom: 20px;
+}
+
+.case-detail-header-actions {
+  display: flex;
+
+  flex-direction: row !important;
+  align-items: center;
+
+  gap: 8px;
+
+  min-width: 0;
+}
+
+.case-detail-card {
+  margin-bottom: 20px;
+
+  border: 1px solid #e5e7eb;
+}
+
+.case-description {
+  margin-top: 10px !important;
+  margin-bottom: 20px !important;
+
+  line-height: 1.7 !important;
+
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.status-timeline {
+  display: flex;
+  flex-direction: column;
+
+  gap: 18px;
+
+  margin-top: 20px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 14px;
+
+  min-width: 0;
+}
+
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+
+  flex-shrink: 0;
+
+  margin-top: 6px;
+
+  border-radius: 50%;
+
+  background-color: #16a34a;
+}
+
+.timeline-content {
+  min-width: 0;
+
+  overflow-wrap: anywhere;
+}
+
+/* =========================================
+   DOCUMENTS
+========================================= */
+
+.documents-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+
+  margin-top: 16px;
+}
+
+.document-item {
+  padding: 12px;
+
+  border: 1px solid #e4e8ef;
+  border-radius: 8px;
+
+  background-color: #fafbfc;
+
+  overflow-wrap: anywhere;
+}
+
+.upload-document-button {
+  margin-top: 16px !important;
+}
+
+/* =========================================
+   COMMENTS
+========================================= */
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 16px;
+}
+
+.comment-item {
+  padding: 4px 0;
+
+  min-width: 0;
+}
+
+.comment-text {
+  margin-top: 4px !important;
+
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.comment-divider {
+  margin-top: 12px !important;
+  margin-bottom: 12px !important;
+}
+
+.comment-input {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  min-width: 0;
+}
+
+.comment-input .MuiTextField-root {
+  min-width: 0;
+}
+
+/* =========================================
+   MANAGER ACTIONS
+========================================= */
+
+.workflow-card {
+  margin-top: 0;
+}
+
+.manager-actions {
+  display: flex;
+  gap: 8px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .case-detail-header-actions {
+    flex-wrap: wrap;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .case-detail-header-actions {
+    width: 100%;
+
+    justify-content: flex-start;
+  }
+
+  .case-detail-card {
+    margin-bottom: 16px;
+  }
+
+  .case-detail-card .MuiCardContent-root {
+    padding: 16px !important;
+  }
+
+  .comment-input {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .comment-input button {
+    width: 100%;
+  }
+
+  .manager-actions {
+    flex-direction: column;
+  }
+
+  .manager-actions button {
+    width: 100%;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+  .case-detail-card .MuiCardContent-root {
+    padding: 12px !important;
+  }
+
+  .case-detail-header-actions {
+    gap: 6px;
+  }
+}
