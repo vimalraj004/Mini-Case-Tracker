@@ -12,7 +12,7 @@ import caseRoutes from "./routes/caseRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 import auditLogRoutes from "./routes/auditLogRoutes.js";
-import dashboardRoutes from "./routes/dashboardRoutes.js";
+import dashBoardRoutes from "./routes/dashboardRoutes.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const app = express();
@@ -29,7 +29,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/cases", caseRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/audit-logs", auditLogRoutes);
-app.use("/api/dashboard", dashboardRoutes);
+app.use("/api/dashboard", dashBoardRoutes);
 
 app.use((_, res) => res.status(404).json({ message: "Route not found" }));
 app.use(errorHandler);
