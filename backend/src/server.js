@@ -33,7 +33,7 @@ app.use("/api/dashboard", dashboardRoutes);
 
 app.use((_, res) => res.status(404).json({ message: "Route not found" }));
 app.use(errorHandler);
-app.use("/api/audit-logs", auditLogRoutes);
+
 
 const port = Number(process.env.PORT || 5000);
 
