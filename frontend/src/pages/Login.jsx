@@ -32,7 +32,7 @@ import {
 } from "@mui/icons-material";
 
 import { useAuth } from "../context/AuthContext";
-import "../styles/Login.css";
+import "../styles/login.css";
 import { toast } from "react-toastify";
 import client from "../api/client";
 export default function Login() {
